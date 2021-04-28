@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OrleansEventSourcing": {
+      "commandName": "Project",
+      "commandLineArgs": "--environment Development"
+    }
+  }
+}

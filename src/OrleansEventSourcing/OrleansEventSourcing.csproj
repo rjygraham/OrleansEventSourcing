@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>fc5cbfc3-488f-4d7f-8c61-148cd5d0808c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	<PackageReference Include="Bogus" Version="33.0.2" />
+	<PackageReference Include="Microsoft.Azure.Cosmos" Version="3.18.0" />
+	<PackageReference Include="Microsoft.Azure.EventHubs" Version="4.3.1" />
+	<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+	<PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+	<PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.2">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.Orleans.EventSourcing" Version="3.4.2" />
+	<PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="3.4.2" />
+	<PackageReference Include="Microsoft.Orleans.OrleansServiceBus" Version="3.4.2" />
+	<PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="3.4.2" />
+	<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrleansEventSourcing.Models\OrleansEventSourcing.Models.csproj" />
+  </ItemGroup>
+
+</Project>
